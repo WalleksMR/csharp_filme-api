@@ -1,3 +1,4 @@
+using filmesAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace filmesAPI.Data;
@@ -8,4 +9,5 @@ public class FilmContext : DbContext
   {
 
   }
+  public DbSet<Filme> Filmes { get; set; }
 }
