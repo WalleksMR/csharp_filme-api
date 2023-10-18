@@ -10,5 +10,6 @@ public class FilmProfile : Profile
   {
     CreateMap<CreateFilmDto, Filme>();
     CreateMap<UpdateFilmDto, Filme>();
+    CreateMap<Filme, UpdateFilmDto>();
   }
 }
