@@ -12,7 +12,7 @@ public class Filme
   public string Titulo { get; set; }
 
   [Required(ErrorMessage = "Genero is required")]
-  [MaxLength(50, ErrorMessage = "should not exceed 50 characters")]
+  [StringLength(50, ErrorMessage = "should not exceed 50 characters")]
   public string Genero { get; set; }
 
   [Required(ErrorMessage = "Duracao is required")]
