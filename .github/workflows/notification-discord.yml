@@ -1,26 +1,26 @@
-name: Discord Notification
+# name: Discord Notification
 
-on:
-  push:
-    branches:
-      - "main"
+# on:
+#   push:
+#     branches:
+#       - "main"
 
-jobs:
-  notify-discord:
-    runs-on: ubuntu-latest
+# jobs:
+#   notify-discord:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v2
 
-    - name: Notify Discord
-      uses: rjstone/discord-webhook-notify@v1
-      if: success()
-      with:
-        severity: info
-        username: ${{github.actor}}
-        description: "Teste 01 This is a ${{ github.ref_name }} -- ${{ github.base_ref }} custom description \n Quebra de linha. \n ${{github}}"
-        details: 'Custom details: Somebody set up us the bomb.'
-        footer: This is a footer.
-        text: This is where text goes.
-        webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+#     - name: Notify Discord
+#       uses: rjstone/discord-webhook-notify@v1
+#       if: success()
+#       with:
+#         severity: info
+#         username: ${{github.actor}}
+#         description: "Teste 01 This is a ${{ github.ref_name }} -- ${{ github.base_ref }} custom description \n Quebra de linha. \n ${{github}}"
+#         details: 'Custom details: Somebody set up us the bomb.'
+#         footer: This is a footer.
+#         text: This is where text goes.
+#         webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
