@@ -19,7 +19,7 @@ jobs:
       with:
         severity: info
         username: ${{github.actor}}
-        description: "Teste 01 This is a ${{ github.ref_name }} -- ${{ github.base_ref }} custom description \n Quebra de linha."
+        description: "Teste 01 This is a ${{ github.ref_name }} -- ${{ github.base_ref }} custom description \n Quebra de linha. \n ${{github}}"
         details: 'Custom details: Somebody set up us the bomb.'
         footer: This is a footer.
         text: This is where text goes.
