@@ -19,7 +19,8 @@ jobs:
       with:
         severity: info
         username: ${{github.actor}}
-        description: "This is a (${{github.action_repositor}}) custom description (${{ github.actor }})."
+        description: "Teste 01 This is a ${{github.action_repositor}} custom description ."
+        description: "Teste 02 ${{github.head_ref}} custom description."
         details: 'Custom details: Somebody set up us the bomb.'
         footer: This is a footer.
         text: This is where text goes.
