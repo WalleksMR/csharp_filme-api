@@ -6,7 +6,7 @@ namespace filmesAPI.Profiles
 {
     public class CinemaProfile : Profile
     {
-        CinemaProfile()
+        public CinemaProfile()
         {
             CreateMap<CreateCinemaDto, Cinema>();
             CreateMap<Cinema, ReadCinemaDto>();

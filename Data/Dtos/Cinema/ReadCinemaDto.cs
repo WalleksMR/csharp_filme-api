@@ -1,4 +1,4 @@
-﻿using filmesAPI.Data.Dtos.Endereco.FilmesApi.Data.Dtos;
+﻿using filmesAPI.Data.Dtos.Endereco;
 
 namespace filmesAPI.Data.Dtos.Cinema
 {

@@ -1,11 +1,8 @@
 ﻿namespace filmesAPI.Data.Dtos.Endereco
 {
-    namespace FilmesApi.Data.Dtos
+    public class UpdateEnderecoDto
     {
-        public class UpdateEnderecoDto
-        {
-            public string Logradouro { get; set; }
-            public int Numero { get; set; }
-        }
+        public string Logradouro { get; set; }
+        public int Numero { get; set; }
     }
 }
