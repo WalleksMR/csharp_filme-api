@@ -20,7 +20,6 @@ jobs:
         severity: info
         username: CustomUsername
         color: '#ff00aa'
-        avatarUrl: " (${ github.actor.url })"
         description: "This is a (${github.action_repositor}) custom description (${ github.actor })."
         details: 'Custom details: Somebody set up us the bomb.'
         footer: This is a footer.
