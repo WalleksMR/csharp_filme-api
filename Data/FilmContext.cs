@@ -5,9 +5,10 @@ namespace filmesAPI.Data;
 
 public class FilmContext : DbContext
 {
-  public FilmContext(DbContextOptions<FilmContext> opts) : base(opts)
-  {
+    public FilmContext(DbContextOptions<FilmContext> opts) : base(opts)
+    {
 
-  }
-  public DbSet<Filme> Filmes { get; set; }
+    }
+    public DbSet<Filme> Filmes { get; set; }
+    public DbSet<Cinema> Cinemas { get; set; }
 }
