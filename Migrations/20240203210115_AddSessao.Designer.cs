@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using filmesAPI.Data;
 
@@ -10,9 +11,11 @@ using filmesAPI.Data;
 namespace filmesAPI.Migrations
 {
     [DbContext(typeof(FilmContext))]
-    partial class FilmContextModelSnapshot : ModelSnapshot
+    [Migration("20240203210115_AddSessao")]
+    partial class AddSessao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
