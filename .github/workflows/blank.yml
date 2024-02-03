@@ -18,9 +18,8 @@ jobs:
       if: success()
       with:
         severity: info
-        username: CustomUsername
-        color: '#ff00aa'
-        description: "This is a (${github.action_repositor}) custom description (${ github.actor })."
+        username: ${{github.actor}}
+        description: "This is a (${{github.action_repositor}}) custom description (${{ github.actor }})."
         details: 'Custom details: Somebody set up us the bomb.'
         footer: This is a footer.
         text: This is where text goes.
